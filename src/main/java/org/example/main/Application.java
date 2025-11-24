@@ -8,7 +8,7 @@ public class Application {
     private static final Properties properties = loadProperties();
     public static void main(String[] args) {
         log.log(System.Logger.Level.INFO, String.format("version = %s", properties.getProperty("version", "-")));
-        console.log("hii");
+        System.out.println("Hello from Jenkins!");
     }
 
     private static Properties loadProperties() {
